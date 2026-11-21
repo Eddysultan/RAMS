@@ -1,0 +1,7 @@
+outcome_family,definition_name,definition,role,status,requires_confirmation
+vitamin_d,vitd_lt_30_nmol_L,25-hydroxyvitamin D < 30 nmol/L,candidate sensitivity/severity definition,NOT FROZEN,Confirm biomarker units and assay harmonization across cycles.
+vitamin_d,vitd_lt_50_nmol_L,25-hydroxyvitamin D < 50 nmol/L,candidate insufficiency screening definition,NOT FROZEN,Confirm target clinical framing and assay harmonization across cycles.
+iron,ferritin_lt_15,Ferritin < 15 µg/L,primary conservative candidate,CANDIDATE PRIMARY — NOT YET FROZEN,"Confirm ferritin units, assay comparability, eligibility and inflammation strategy."
+iron,preanemic_ferritin_lt_15,Ferritin <15 µg/L among participants not meeting candidate sex-specific anemia thresholds,primary pre-anemic iron candidate,CANDIDATE PRIMARY — NOT YET FROZEN,"Confirm hemoglobin/anemia thresholds, ferritin eligibility and inflammation handling."
+iron,preanemic_ferritin_lt_25,Ferritin <25 µg/L among participants not meeting candidate sex-specific anemia thresholds,sensitivity analysis candidate,NOT PRIMARY,Use only if scientifically justified.
+iron,matched_transport_population,"Females age 18–49, excluding known pregnancy, with ferritin measured",candidate population-matched temporal sensitivity,NOT FROZEN,Compare against official ferritin eligibility rules for I/J/L and earlier cycles.

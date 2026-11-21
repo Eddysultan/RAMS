@@ -1,0 +1,7 @@
+model,family,primary,calibration_allowed,scaling_required,categorical_strategy,class_weight_strategy,tuning_iterations,cv_folds,tuning_seed
+logistic_regression,linear,True,True,True,one_hot,balanced,1,5,1107
+elastic_net_logistic,linear,True,True,True,one_hot,balanced,25,5,1107
+random_forest,tree,True,True,False,one_hot,balanced,30,5,1107
+xgboost,boosting,True,True,False,one_hot,scale_pos_weight_training_only,40,5,1107
+lightgbm,boosting,True,True,False,one_hot,balanced_or_scale_pos_weight_training_only,40,5,1107
+catboost,boosting,True,True,False,native_or_locked_encoded,training_only,40,5,1107

@@ -1,0 +1,15 @@
+guardrail_id,name,rule,status
+G001,No biomarker leakage,Ferritin and 25(OH)D must never appear in predictor matrices.,LOCKED
+G002,Training-only preprocessing,"Imputation, scaling and encoding must be fit only on training data.",LOCKED
+G003,Training-only class weighting,Class weights or scale_pos_weight must be calculated using training labels only.,LOCKED
+G004,No test-driven tuning,Temporal test cycles must never participate in hyperparameter selection.,LOCKED
+G005,No test-driven calibration,Calibration functions must be estimated without using temporal test labels.,LOCKED
+G006,No post-hoc predictor addition,Primary predictors are frozen from Stage 02B before model results.,LOCKED
+G007,No post-hoc model deletion,All predefined primary model families must be reported.,LOCKED
+G008,Matched iron retained,Observed and matched iron results must be analyzed in parallel.,LOCKED
+G009,P remains supplementary,2017–March 2020 must not be treated as an independent sequential cycle alongside J.,LOCKED
+G010,Multiple seeds,Stochastic algorithms must be evaluated across all locked seeds.,LOCKED
+G011,Bootstrap uncertainty,Primary test metrics require 95% bootstrap confidence intervals.,LOCKED
+G012,Calibration reported,"Discrimination alone is insufficient; Brier, calibration slope/intercept and ECE are required.",LOCKED
+G013,Resource endpoints reported,Testing burden must be evaluated at predefined sensitivity targets.,LOCKED
+G014,Survey weights separate from primary ML objective,Primary predictive training remains participant-level unless a later locked sensitivity analysis explicitly adds survey weighting.,LOCKED

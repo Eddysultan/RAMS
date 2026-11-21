@@ -1,0 +1,21 @@
+{
+  "audit_name": "RAMS Phase 5 Statistical Audit",
+  "timestamp_utc": "2026-11-06T02:25:26.633296+00:00",
+  "project_root": "C:\\Nutrient_NHANES_EXP",
+  "primary_source": "C:\\Nutrient_NHANES_EXP\\processed\\RAMS\\RAMS_primary_temporal_results.csv",
+  "actions_source": "C:\\Nutrient_NHANES_EXP\\processed\\RAMS\\RAMS_retrospective_screening_actions.csv",
+  "primary_evaluations": 28,
+  "subgroup_evaluation_rows": 420,
+  "reconciliation_passed": true,
+  "models_refitted": false,
+  "thresholds_changed": false,
+  "method": "Wilson score confidence intervals",
+  "confidence_level": 0.95,
+  "limitations": [
+    "Individual temporal evaluation intervals are unweighted binomial intervals.",
+    "They do not incorporate the NHANES complex survey design.",
+    "Temporal evaluations overlap and are not independent replications.",
+    "Subgroup score summaries are descriptive.",
+    "This audit does not independently validate the development-selected RAMS configuration."
+  ]
+}

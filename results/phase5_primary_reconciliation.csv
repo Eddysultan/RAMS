@@ -1,0 +1,9 @@
+metric,max_absolute_difference,all_match
+n,0.0,True
+positives,0.0,True
+tp,0.0,True
+fn,0.0,True
+referrals,0.0,True
+sensitivity,1.1102230246251565e-16,True
+referral_fraction,5.551115123125783e-17,True
+missed_per_1000,3.552713678800501e-15,True

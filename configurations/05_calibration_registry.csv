@@ -1,0 +1,4 @@
+calibration_method,primary,description,fit_scope,test_labels_used,locked
+none,False,Raw model probability.,training_data_only,False,True
+sigmoid,True,Platt-style logistic calibration learned from training data only.,training_data_only,False,True
+isotonic,False,Non-parametric isotonic calibration; predefined sensitivity method.,training_data_only,False,True

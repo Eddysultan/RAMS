@@ -1,0 +1,29 @@
+analysis_tier,feature,domain,incremental_block,primary_analysis,resource_interpretation
+Tier 1,age_years,demographics,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,sex,demographics,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,race_ethnicity_5cat,demographics,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,education_adult_5cat,socioeconomic,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,poverty_income_ratio,socioeconomic,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,health_insurance,healthcare_access,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,has_routine_place_for_care,healthcare_access,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,adult_food_security_4cat,food_security,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,bmi,anthropometric,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,waist_cm,anthropometric,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,smoking_status_3cat,lifestyle,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,doctor_diagnosed_diabetes,medical_history,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,doctor_diagnosed_hypertension,medical_history,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,day1_energy_kcal,dietary,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,day1_dietary_iron_mg,dietary,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 1,day1_dietary_vitamin_d,dietary,Low-resource core,True,Non-specialized / low-resource screening information
+Tier 2 primary,cbc_wbc,cbc,Routine CBC,True,Tier 1 plus routine hematology information
+Tier 2 primary,cbc_rbc,cbc,Routine CBC,True,Tier 1 plus routine hematology information
+Tier 2 primary,cbc_hemoglobin,cbc,Routine CBC,True,Tier 1 plus routine hematology information
+Tier 2 primary,cbc_hematocrit,cbc,Routine CBC,True,Tier 1 plus routine hematology information
+Tier 2 primary,cbc_mcv,cbc,Routine CBC,True,Tier 1 plus routine hematology information
+Tier 2 primary,cbc_mch,cbc,Routine CBC,True,Tier 1 plus routine hematology information
+Tier 2 primary,cbc_mchc,cbc,Routine CBC,True,Tier 1 plus routine hematology information
+Tier 2 primary,cbc_rdw,cbc,Routine CBC,True,Tier 1 plus routine hematology information
+Tier 2 primary,cbc_platelets,cbc,Routine CBC,True,Tier 1 plus routine hematology information
+Tier 2 sensitivity,serum_albumin,routine_chemistry,Routine chemistry,False,Expanded routine-laboratory sensitivity analysis
+Tier 2 sensitivity,serum_creatinine,routine_chemistry,Routine chemistry,False,Expanded routine-laboratory sensitivity analysis
+Tier 2 sensitivity,serum_glucose,routine_chemistry,Routine chemistry,False,Expanded routine-laboratory sensitivity analysis

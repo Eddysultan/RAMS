@@ -1,0 +1,12 @@
+decision_id,stage,topic,decision,reason,status,date
+D040,05,Model suite,"Primary model suite is LR, Elastic-Net LR, RF, XGBoost, LightGBM and CatBoost.",Provides interpretable linear baselines and strong tabular nonlinear comparators without architecture sprawl.,FROZEN,2026-09-11
+D041,05,Primary resource tiers,Primary comparisons use Tier 1 and Tier 2 CBC.,Directly tests the incremental value of routine CBC.,FROZEN,2026-09-11
+D042,05,Chemistry extension,"Albumin, creatinine and glucose remain a predefined sensitivity extension only.",Preserves the primary CBC-centered resource hierarchy.,FROZEN,2026-09-11
+D043,05,Preprocessing,"All imputation, encoding and scaling parameters are fit within training data only.",Prevents temporal leakage.,FROZEN,2026-09-11
+D044,05,Hyperparameter tuning,Hyperparameters are selected by 5-fold CV entirely within the training cohort.,Temporal test cohorts remain locked external evaluations.,FROZEN,2026-09-11
+D045,05,Temporal experiments,"Fixed-origin, rolling-expanding and J-to-I/J-to-L bridge experiments are predefined.","Captures long-range, local and original-study temporal transport.",FROZEN,2026-09-11
+D046,05,Random seeds,Ten predefined seeds are used.,Quantifies stochastic model variation.,FROZEN,2026-09-11
+D047,05,Calibration,Sigmoid calibration is primary; uncalibrated and isotonic outputs are predefined sensitivity analyses.,Calibration reliability is a central deployment outcome.,FROZEN,2026-09-11
+D048,05,Evaluation metrics,"AUROC, AUPRC, Brier, calibration slope/intercept, ECE and operational testing-burden endpoints are locked.",Discrimination alone is insufficient for clinical triage.,FROZEN,2026-09-11
+D049,05,Sensitivity targets,"Testing-burden endpoints are evaluated at sensitivity targets 90%, 95% and 97.5%.",Allows clinically interpretable comparison of targeted confirmatory testing strategies.,FROZEN,2026-09-11
+D050,05,Iron natural experiment,All key temporal iron experiments are repeated in observed and matched cohorts.,Tests whether apparent model drift attenuates when eligibility/population shift is controlled.,FROZEN,2026-09-11

@@ -1,0 +1,11 @@
+seed_number,random_seed,purpose,locked
+1,1107,Repeated model fitting / stochastic algorithm stability,True
+2,2203,Repeated model fitting / stochastic algorithm stability,True
+3,3301,Repeated model fitting / stochastic algorithm stability,True
+4,4409,Repeated model fitting / stochastic algorithm stability,True
+5,5501,Repeated model fitting / stochastic algorithm stability,True
+6,6607,Repeated model fitting / stochastic algorithm stability,True
+7,7703,Repeated model fitting / stochastic algorithm stability,True
+8,8807,Repeated model fitting / stochastic algorithm stability,True
+9,9901,Repeated model fitting / stochastic algorithm stability,True
+10,10103,Repeated model fitting / stochastic algorithm stability,True

@@ -1,0 +1,36 @@
+harmonized_feature,domain,tier,inclusion_role,raw_variable_candidates,derived,transform,stage02B_action,notes
+age_years,demographics,T1,PRIMARY_T1,RIDAGEYR,False,numeric,HARMONIZE,Age in years; retained numerically.
+sex,demographics,T1,PRIMARY_T1,RIAGENDR,False,sex,HARMONIZE,"RIAGENDR stable coding retained: 1 male, 2 female."
+race_ethnicity_5cat,demographics,T1,PRIMARY_T1,RIDRETH1,False,race5,HARMONIZE,RIDRETH1 five-category representation retained for long-horizon consistency.
+education_adult_5cat,socioeconomic,T1,PRIMARY_T1,DMDEDUC2,False,education5,HARMONIZE,DMDEDUC2 codes 1–5 retained. Structural age-related missingness is not imputed in Stage 02B.
+poverty_income_ratio,socioeconomic,T1,PRIMARY_T1,INDFMPIR,False,numeric,HARMONIZE,Family poverty-income ratio retained numerically.
+health_insurance,healthcare_access,T1,PRIMARY_T1,HIQ011,False,yes_no,HARMONIZE,"HIQ011 recoded yes=1, no=0."
+has_routine_place_for_care,healthcare_access,T1,PRIMARY_T1,HUQ030,False,routine_care,HARMONIZE,HUQ030 recoded to has at least one routine place: native 1/3 -> 1; native 2 -> 0.
+adult_food_security_4cat,food_security,T1,PRIMARY_T1,FSDAD,False,food_security4,HARMONIZE,"FSDAD retained as four-category adult food-security construct: full, marginal, low, very low."
+bmi,anthropometric,T1,PRIMARY_T1,BMXBMI,False,numeric,HARMONIZE,Measured BMI retained numerically.
+waist_cm,anthropometric,T1,PRIMARY_T1,BMXWAIST,False,numeric,HARMONIZE,Measured waist circumference retained numerically.
+smoking_status_3cat,lifestyle,T1,PRIMARY_T1,SMQ020|SMQ040,True,derived_smoking,HARMONIZE,"Derived from SMQ020 + SMQ040: 0 never, 1 former, 2 current. Corrects conditional-question missingness."
+doctor_diagnosed_diabetes,medical_history,T1,PRIMARY_T1,DIQ010,False,yes_no_borderline,HARMONIZE,"DIQ010 recoded: no=0, yes=1, borderline=2."
+doctor_diagnosed_hypertension,medical_history,T1,PRIMARY_T1,BPQ020,False,yes_no,HARMONIZE,"BPQ020 recoded yes=1, no=0."
+day1_energy_kcal,dietary,T1,PRIMARY_T1,DR1TKCAL,False,numeric,HARMONIZE,Day-1 participant-level total energy.
+day1_dietary_iron_mg,dietary,T1,PRIMARY_T1,DR1TIRON,False,numeric,HARMONIZE,Day-1 participant-level dietary iron.
+day1_dietary_vitamin_d,dietary,T1,PRIMARY_T1,DR1TVD,False,numeric,HARMONIZE,Day-1 participant-level dietary vitamin D.
+cbc_wbc,cbc,T2,PRIMARY_T2_CBC,LBXWBCSI|LBXWBC,False,numeric,HARMONIZE,Primary CBC feature.
+cbc_rbc,cbc,T2,PRIMARY_T2_CBC,LBXRBCSI|LBXRBC,False,numeric,HARMONIZE,Primary CBC feature.
+cbc_hemoglobin,cbc,T2,PRIMARY_T2_CBC,LBXHGB,False,numeric,HARMONIZE,Primary CBC feature.
+cbc_hematocrit,cbc,T2,PRIMARY_T2_CBC,LBXHCT,False,numeric,HARMONIZE,Primary CBC feature.
+cbc_mcv,cbc,T2,PRIMARY_T2_CBC,LBXMCVSI|LBDMCVSI|LBXMCV,False,numeric,HARMONIZE,Primary CBC feature.
+cbc_mch,cbc,T2,PRIMARY_T2_CBC,LBXMCHSI|LBDMCHSI|LBXMCH,False,numeric,HARMONIZE,Primary CBC feature.
+cbc_mchc,cbc,T2,PRIMARY_T2_CBC,LBXMC|LBXMCHC|LBDMCHC,False,numeric,HARMONIZE,Primary CBC feature.
+cbc_rdw,cbc,T2,PRIMARY_T2_CBC,LBXRDW|LBXRDWSD,False,numeric,HARMONIZE,Primary CBC feature.
+cbc_platelets,cbc,T2,PRIMARY_T2_CBC,LBXPLTSI|LBXPLT,False,numeric,HARMONIZE,Primary CBC feature.
+serum_albumin,routine_chemistry,T2_SENSITIVITY,T2_SENSITIVITY,LBXSAL|LBDSALSI,False,numeric,HARMONIZE,Routine chemistry; sensitivity extension only.
+serum_creatinine,routine_chemistry,T2_SENSITIVITY,T2_SENSITIVITY,LBXSCR|LBDSCRSI,False,numeric,HARMONIZE,Routine chemistry; sensitivity extension only.
+serum_glucose,routine_chemistry,T2_SENSITIVITY,T2_SENSITIVITY,LBXSGL|LBDGLUSI,False,numeric,HARMONIZE,Routine chemistry; sensitivity extension only.
+household_food_security_candidate,food_security,SUPPLEMENTARY,SUPPLEMENTARY_AUDIT,FSDHH|FSDHHAD,False,,AUDIT_ONLY,Retained for availability audit only.
+healthcare_visits_candidate,healthcare_access,SUPPLEMENTARY,SUPPLEMENTARY_AUDIT,HUQ051|HUQ050,False,,AUDIT_ONLY,Retained for availability audit only.
+alcohol_use_candidate,lifestyle,SUPPLEMENTARY,SUPPLEMENTARY_AUDIT,ALQ101|ALQ111,False,,AUDIT_ONLY,Retained for availability audit only.
+vigorous_recreational_activity_candidate,lifestyle,SUPPLEMENTARY,SUPPLEMENTARY_AUDIT,PAQ650,False,,AUDIT_ONLY,Retained for availability audit only.
+moderate_recreational_activity_candidate,lifestyle,SUPPLEMENTARY,SUPPLEMENTARY_AUDIT,PAQ665,False,,AUDIT_ONLY,Retained for availability audit only.
+ferritin,confirmatory_biomarker,CONFIRMATORY_ONLY,EXCLUDE,LBXFER|LBDFERSI,False,,PROHIBIT_AS_PREDICTOR,Iron outcome-defining confirmatory biomarker.
+25oh_vitamin_d,confirmatory_biomarker,CONFIRMATORY_ONLY,EXCLUDE,LBXVIDMS|LBDVIDMS,False,,PROHIBIT_AS_PREDICTOR,Vitamin-D outcome-defining confirmatory biomarker.
